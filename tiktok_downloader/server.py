@@ -63,6 +63,7 @@ def auto():
                                     "url": x.json,
                                     "type": x.type,
                                     "service": name,
+                                    "hash": hash(x.json),
                                     "watermark": x.watermark
                                 }, b)),
                             indent=4
@@ -147,6 +148,7 @@ def snapt(path):
                         {
                             'type': i.type,
                             'url': i.json,
+                            'hash': hash(i.json),
                             'watermark': i.watermark
                         } for i in res
                     ],

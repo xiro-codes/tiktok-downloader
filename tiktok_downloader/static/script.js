@@ -39,7 +39,7 @@ document.getElementById('submitter').onclick = function() {
                   <video class="card-img-top" alt="..." poster="${data.cover}" style="padding-top:7px;" controls>
                     <source src="${dj[0].url}" type="video/mp4">
                   </video>
-									<a href="${dj[0].url}" class="btn btn-primary" target="_blank">Download</a>
+									<a href="${dj[0].url}" class="btn btn-primary" download="${dj[0].hash}.mp4">Download</a>
                 </div>
             </div>
           `)
